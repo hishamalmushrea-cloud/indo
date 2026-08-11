@@ -1,11 +1,67 @@
-<div align="center">
+# IndoLearn - تعلم اللغة الإندونيسية
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+تطبيق Android كامل واحترافي لتعليم اللغة الإندونيسية للناطقين بالعربية من الصفر إلى المستوى المتوسط.
 
-  <h1>Built with AI Studio</h2>
+## المميزات المكتملة
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- 14 شاشة حقيقية تعمل
+- Text-to-Speech (نطق إندونيسي) + سرعات مختلفة
+- اختبارات تفاعلية مع نتائج
+- نظام Flashcards
+- **مدرب الإندونيسية اليومية** (قسم كبير ومتكامل)
+  - 40+ تعبير يومي حقيقي مع تصنيف الرسمية
+  - 4 سيناريوهات واقعية (سوق، مطعم، شارع، محل)
+  - تمارين متعددة (استماع، ترجمة، ترتيب كلمات، موقف)
+  - نظام تدريب تفاعلي
+- بحث متقدم
+- مفضلة + تقدم المستخدم
+- مراجعة يومية
+- محادثات وقواعد حقيقية
+- إشعارات يومية
+- دعم الوضع الداكن + RTL
+- قاعدة بيانات Room محلية (Offline 100%)
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## كيفية فتح المشروع
 
-</div>
+1. افتح **Android Studio** (Hedgehog أو أحدث)
+2. `File → Open`
+3. اختر المجلد الرئيسي
+4. انتظر Gradle Sync
+5. اضغط **Run**
+
+## بناء التطبيق
+
+```bash
+# داخل Android Studio:
+Build → Build Bundle(s) / APK(s) → Build APK(s)
+```
+
+سيتم إنشاء `app-debug.apk` في:
+`app/build/outputs/apk/debug/`
+
+## هيكل المشروع
+
+```
+app/
+├── data/
+│   ├── local/          # Room + Entities + DAOs
+│   └── repository/
+├── ui/
+│   ├── screens/        # جميع الشاشات
+│   └── theme/
+├── utils/              # TTS + Notifications
+├── navigation/
+└── viewmodel/
+```
+
+## إضافة محتوى جديد
+
+يمكنك إضافة دروس أو مفردات جديدة داخل `LearnRepository.seedInitialData()`.
+
+## الترخيص
+
+مشروع تعليمي مفتوح المصدر.
+
+---
+
+**تم تطوير التطبيق بالكامل باستخدام Kotlin + Jetpack Compose + Room + MVVM**

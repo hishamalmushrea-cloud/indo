@@ -1,0 +1,8 @@
+{
+  "name": "IndoLearn",
+  "description": "Indonesian language learning application with vocabulary, grammar, flashcards, and quizzes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
